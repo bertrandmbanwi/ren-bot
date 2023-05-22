@@ -11,8 +11,8 @@ payload = {
   iat: Time.now.to_i - 60,
   # JWT expiration time (10 minute maximum)
   exp: Time.now.to_i + (10 * 60),
-  # CDC GitHub Botfrey App ID
-  iss: "193515"
+  # CDC GitHub Bet-Renovate-Bot App ID
+  iss: "337341"
 }
 
 jwt = JWT.encode(payload, private_key, "RS256")
