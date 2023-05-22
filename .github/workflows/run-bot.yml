@@ -11,12 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: bet-renovate-bot
+    container:
+      image: node:18.12-buster
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
       - name: Install Dependencies
         run: npm install
       - name: Run
