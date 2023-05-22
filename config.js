@@ -1,6 +1,6 @@
 module.exports = {
-    username: "cdc-coe-botfrey[bot]",
-    gitAuthor: "Self-hosted Renovate Bot <123456+cdc-coe-botfrey[bot]@users.noreply.github.enterprise.com>",
+    username: "bet-renovate-bot",
+    gitAuthor: "Bet Renovate Bot <123456+cdc-coe-botfrey[bot]@users.noreply.github.enterprise.com>",
     platform: 'github',
     dependencyDashboard: true,
     onboardingConfig: {
@@ -30,5 +30,5 @@ module.exports = {
     pin: {
         automerge: true
     },
-    repositories: ['cdcent/data-exchange-infra','cdcent/cdc-coe-emmanuel-test-repo'],
+    repositories: ['bertrandmbanwi/my-azure-hello-world'],
 };
