@@ -8,7 +8,7 @@ on:
 
 jobs:
   renovate:
-    runs-on:  [self-hosted, renovatebot]
+    runs-on:  ubuntu Latest
     environment:
       name: bet-renovate-bot
     steps:
