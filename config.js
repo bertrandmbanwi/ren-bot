@@ -30,5 +30,5 @@ module.exports = {
     pin: {
         automerge: true
     },
-    repositories: ['bertrandmbanwi/my-azure-hello-world'],
+    repositories: ['bertrandmbanwi/devops-fully-automated-infra'],
 };
