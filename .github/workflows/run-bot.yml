@@ -10,12 +10,12 @@ jobs:
   renovate:
     runs-on:  [self-hosted, renovatebot]
     environment:
-      name: cdc-coe-botfrey
+      name: bet-renovate-bot
     steps:
       - uses: actions/checkout@v3
       - name: Run
         run: |
           echo "Downloading Github App private key..."
-          echo "${{ secrets.CDC_COE_BOTFREY_PEM }}" > app-private-key.pem
+          echo "${{ secrets.APP_PRIVATE_KEY }}" > app-private-key.pem
           
           npm run renovate
