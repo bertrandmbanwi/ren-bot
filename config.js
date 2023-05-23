@@ -4,31 +4,32 @@ module.exports = {
     platform: 'github',
     dependencyDashboard: true,
     onboardingConfig: {
-        extends: ['config:base',':rebaseStalePrs'],
+        extends: ['config:base', ':rebaseStalePrs'],
     },
     labels: ["renovatebot"],
-    // schedule: ["every weekend"],
     packageRules: [
         {
             matchPackageNames: ["hashicorp/terraform"],
             groupName: "terraform",
+            major: {
+                automerge: false,
+            },
+            minor: {
+                automerge: true,
+            },
+            patch: {
+                automerge: true,
+            },
+            pin: {
+                automerge: true,
+            },
         }
     ],
-    // Managers https://docs.renovatebot.com/modules/manager/#enabling-and-disabling-managers
     enabledManagers: ["terraform"],
     lockFileMaintenance: {
         enabled: true,
         automerge: true
     },
     updateLockFiles: true,
-    minor: {
-        automerge: true
-    },
-    patch: {
-        automerge: true
-    },
-    pin: {
-        automerge: true
-    },
     repositories: ['bertrandmbanwi/devops-fully-automated-infra'],
 };
