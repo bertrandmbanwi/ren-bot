@@ -1,6 +1,6 @@
 module.exports = {
     username: "bet-renovate-bot",
-    gitAuthor: "Bet Renovate Bot <123456+bet-renovate-bot@users.noreply.github.enterprise.com>",
+    gitAuthor: "Bet Renovate Bot <337341+bet-renovate-bot@users.noreply.github.com>",
     platform: 'github',
     onboarding: false, // disables the creation of renovate.json in each repository
     dependencyDashboard: true,
