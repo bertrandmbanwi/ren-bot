@@ -1,3 +1,6 @@
+workflow file:
+
+
 name: Run RenovateBot
 
 on:
@@ -18,7 +21,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run
-        env:
-          RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
         run: |
+          echo "Downloading Github App private key..."
+          echo "${{ secrets.APP_PRIVATE_KEY }}" > app-private-key.pem
+          
           npm run renovate
