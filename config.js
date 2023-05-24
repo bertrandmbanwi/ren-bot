@@ -1,6 +1,6 @@
 module.exports = {
     username: "bet-renovate-bot",
-    gitAuthor: "Bet Renovate Bot <123456+cdc-coe-botfrey[bot]@users.noreply.github.enterprise.com>",
+    gitAuthor: "Bet Renovate Bot <123456+Bet-renovate-bot@users.noreply.github.enterprise.com>",
     platform: 'github',
     dependencyDashboard: true,
     onboardingConfig: {
@@ -12,7 +12,7 @@ module.exports = {
             matchPackageNames: ["hashicorp/terraform"],
             groupName: "terraform",
             major: {
-                automerge: true,
+                automerge: false,
             },
             minor: {
                 automerge: true,
