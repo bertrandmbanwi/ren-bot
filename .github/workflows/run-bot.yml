@@ -1,6 +1,3 @@
-workflow file:
-
-
 name: Run RenovateBot
 
 on:
