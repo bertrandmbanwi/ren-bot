@@ -5,6 +5,7 @@ module.exports = {
     onboarding: true, // disables the creation of renovate.json in each repository
     dependencyDashboard: true,
     labels: ["renovatebot"],
+    requiredStatusChecks: null,
     packageRules: [
         {
             matchManagers: ['terraform'],
