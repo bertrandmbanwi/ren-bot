@@ -2,15 +2,13 @@ module.exports = {
     username: "bet-renovate-bot",
     gitAuthor: "Bet Renovate Bot <123456+bet-renovate-bot@users.noreply.github.enterprise.com>",
     platform: 'github',
+    onboarding: false, // disables the creation of renovate.json in each repository
     dependencyDashboard: true,
-    onboardingConfig: {
-        extends: ['config:base', ':rebaseStalePrs'],
-    },
     labels: ["renovatebot"],
     packageRules: [
         {
             matchManagers: ['terraform'],
-            matchUpdateTypes: ['minor', 'patch', 'pin', 'digest'],
+            matchUpdateTypes: ['minor', 'patch', 'pin'],
             automerge: true,
         },
         {
