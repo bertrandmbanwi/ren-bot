@@ -12,7 +12,7 @@ module.exports = {
             matchPackageNames: ["hashicorp/terraform"],
             groupName: "terraform",
             major: {
-                automerge: false,
+                automerge: true,
             },
             minor: {
                 automerge: true,
