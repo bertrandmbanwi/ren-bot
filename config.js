@@ -31,5 +31,5 @@ module.exports = {
         automerge: true
     },
     updateLockFiles: true,
-    repositories: ['bertrandmbanwi/devops-fully-automated-infra','bertrandmbanwi/eks-demo'],
+    repositories: ['bertrandmbanwi/devops-fully-automated-infra'],
 };
