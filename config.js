@@ -26,5 +26,5 @@ module.exports = {
         automerge: true
     },
     updateLockFiles: true,
-    repositories: ['bertrandmbanwi/devops-fully-automated-infra','bertrandmbanwi/TerraformEksSonarqubeDeploy'],
+    repositories: ['bertrandmbanwi/TerraformEksSonarqubeDeploy'],
 };
