@@ -3,7 +3,7 @@ module.exports = {
     gitAuthor: "Bet Renovate Bot <337341+bet-renovate-bot@users.noreply.github.com>",
     platform: 'github',
     onboarding: true, // disables the creation of renovate.json in each repository
-    dependencyDashboard: false,
+    dependencyDashboard: true,
     labels: ["renovatebot"],
     requiredStatusChecks: null,
     packageRules: [
