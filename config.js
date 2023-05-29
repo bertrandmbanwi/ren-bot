@@ -5,12 +5,13 @@ module.exports = {
     dependencyDashboard: true,
     labels: ["renovatebot"],
     requiredStatusChecks: null,
-    onboarding: true, // disables the creation of renovate.json in each repository
+    onboarding: true, 
     packageRules: [
         {
             matchManagers: ['terraform'],
             matchUpdateTypes: ['minor', 'patch', 'pin'],
             automerge: true,
+            autoApprove: true,
             recreateClosed: true
         },
         {
@@ -26,5 +27,5 @@ module.exports = {
         automerge: true
     },
     updateLockFiles: true,
-    repositories: ['bertrandmbanwi/TerraformEksSonarqubeDeploy','bertrandmbanwi/eks-demo'],
+    repositories: ['bertrandmbanwi/TerraformEksSonarqubeDeploy', 'bertrandmbanwi/eks-demo'],
 };
