@@ -4,7 +4,7 @@ module.exports = {
     platform: 'github',
     dependencyDashboard: true,
     labels: ["renovatebot"],
-    requiredStatusChecks: null,
+    requiredStatusChecks: true,
     onboarding: true, 
     packageRules: [
         {
