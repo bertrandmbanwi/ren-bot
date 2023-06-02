@@ -7,7 +7,7 @@ JWT=$(ruby generate-jwt-token.rb)
 
 #echo "curl -s -H \"Authorization: Bearer ${JWT}\" -H \"Accept: application/vnd.github+json\" https://api.github.com/app/installations"
 #echo "Getting Github App Installation ID"
-sleep 3
+sleep 9
 installation_id_response=$(curl -s -H "Authorization: Bearer ${JWT}" -H "Accept: application/vnd.github+json" https://api.github.com/app/installations)
 # echo "${installation_id_response}"
 installation_id=$(echo "$installation_id_response" | jq ".[] .id")
