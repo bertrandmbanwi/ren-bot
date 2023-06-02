@@ -35,4 +35,3 @@ fi
 
 echo "${TOKEN}"
 #echo "token expiration: ${EXPIRATION}"
-
